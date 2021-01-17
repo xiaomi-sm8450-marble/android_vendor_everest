@@ -171,8 +171,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    vendor/awaken/overlay \
-    vendor/awaken/overlay/no-rro
+    vendor/everest/overlay \
+    vendor/everest/overlay/no-rro
 
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/everest/overlay/common \
