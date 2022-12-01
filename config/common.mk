@@ -187,6 +187,13 @@ PRODUCT_PACKAGES += \
     DocumentsUIOverlay \
     NetworkStackOverlay
 
+# Call Recording
+TARGET_CALL_RECORDING_SUPPORTED ?= true
+ifneq ($(TARGET_CALL_RECORDING_SUPPORTED),false)
+PRODUCT_COPY_FILES += \
+    vendor/everest/config/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml
+endif
+
 include vendor/everest/config/version.mk
 include vendor/everest/config/everest.mk
 
