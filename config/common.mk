@@ -246,3 +246,4 @@ include vendor/everest/config/everest.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/everest/config/partner_gms.mk
+include packages/overlays/Themes/themes.mk
