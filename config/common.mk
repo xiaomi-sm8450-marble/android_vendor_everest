@@ -196,7 +196,9 @@ endif
 
 # Charger
 PRODUCT_PACKAGES += \
-    product_charger_res_images
+    charger_res_images \
+    product_charger_res_images \
+    product_charger_res_images_vendor
 
 include vendor/everest/config/version.mk
 include vendor/everest/config/everest.mk
