@@ -220,6 +220,10 @@ PRODUCT_PACKAGES += \
 # Bootanimation
 include vendor/everest/config/bootanimation.mk
 
+# GameSpace
+PRODUCT_PACKAGES += \
+    GameSpace
+
 # Call Recording
 TARGET_CALL_RECORDING_SUPPORTED ?= true
 ifneq ($(TARGET_CALL_RECORDING_SUPPORTED),false)
