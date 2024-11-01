@@ -34,6 +34,14 @@ ifeq ($(filter-out OFFICIAL,$(EVEREST_BUILD_TYPE)),)
     PRODUCT_DEFAULT_DEV_CERTIFICATE := $(KEYS_LOCATION)
 endif
 
+# Vanilla and Gapps
+WITH_GAPPS ?= true
+ifeq ($(WITH_GAPPS),true)
+$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
+else
+include vendor/everest/config/vanilla.mk
+endif
+
 ifeq ($(WITH_GAPPS),true)
 EVEREST_EDITION := GAPPS
 else

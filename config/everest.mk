@@ -16,14 +16,6 @@
 PRODUCT_PACKAGES += \
     EverestWallpaperStub
 
-# Vanilla and Gapps
-WITH_GAPPS ?= true
-ifeq ($(WITH_GAPPS),true)
-$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
-else
-include vendor/everest/config/vanilla.mk
-endif
-
 # repainter
 PRODUCT_PACKAGES += \
     RepainterServicePriv
